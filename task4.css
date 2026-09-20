@@ -1,0 +1,113 @@
+/* task4.css — Portfolio: Grid main layout + Flexbox cards */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-title {
+  text-align: center;
+  color: #1c2b3a;
+  margin: 24px 0;
+}
+
+/* Grid: projects on the left, sidebar info on the right */
+.portfolio-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.projects h2,
+.sidebar-info h2 {
+  color: #1c2b3a;
+  border-bottom: 2px solid #dde3e8;
+  padding-bottom: 6px;
+}
+
+/* Flexbox inside each project card */
+.project-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  border: 1px solid #dde3e8;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.project-card img {
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-info h3 {
+  margin: 0 0 6px;
+  color: #1c2b3a;
+}
+
+.project-info p {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  color: #444;
+  flex-grow: 1;
+}
+
+.project-info button {
+  align-self: flex-start;
+  background-color: #1c2b3a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-info button:hover {
+  background-color: #33495f;
+}
+
+.sidebar-info {
+  background-color: #ffffff;
+  border: 1px solid #dde3e8;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  line-height: 1.6;
+}
+
+/* Footer spans full width at the bottom */
+.site-footer {
+  background-color: #1c2b3a;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

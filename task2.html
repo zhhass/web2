@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 2 — Task 2: Grid Layout</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Zhhass.dev</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Part 1 — Flexbox</a></li>
+      <li><a href="task2.html">Part 2 — Grid Layout</a></li>
+      <li><a href="../task3/task3.html">Part 2 — Gallery</a></li>
+      <li><a href="../task4/task4.html">Part 3 — Portfolio</a></li>
+    </ul>
+  </header>
+
+  <h1 class="page-title">Task 2 — Page Layout with Grid Areas</h1>
+
+  <div class="grid-layout">
+    <div class="area-header">Header</div>
+    <div class="area-sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li>Dashboard</li>
+        <li>Projects</li>
+        <li>Settings</li>
+      </ul>
+    </div>
+    <div class="area-main">
+      <h2>Main Content</h2>
+      <p>
+        This section sits in the grid's main content area, defined with
+        <code>grid-template-areas</code>. The sidebar is on the left, this
+        content is on the right, and everything is laid out with CSS Grid —
+        no floats involved.
+      </p>
+    </div>
+    <div class="area-footer">&copy; 2026 Zhhass — Assignment 2</div>
+  </div>
+
+</body>
+</html>

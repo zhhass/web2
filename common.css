@@ -1,0 +1,47 @@
+/* common.css — shared reset + Flexbox navbar (Task 0) for all pages */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Task 0: header is a flex container, logo left, links right, vertically centered */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c2b3a;
+  padding: 14px 28px;
+}
+
+.navbar .logo {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #33495f;
+}
