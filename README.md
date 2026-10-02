@@ -24,17 +24,7 @@ repo/
 `index.html` stays in the repo root — that's what GitHub Pages serves at
 `your-username.github.io/your-repo-name`.
 
-## How to publish on GitHub Pages
+https://zhhass.github.io/web-2/index.html
 
-1. Create a new repository on GitHub.
-2. Open this project folder locally, select everything **inside** it
-   (index.html, style1.css, common.css, README.md, and the task2/task3/task4
-   folders) and upload that — not the outer folder itself. `index.html` must
-   land in the repo root, not inside a subfolder.
-3. Go to **Settings → Pages**, choose the `main` branch and `/root`, save.
-4. Site goes live at `https://your-username.github.io/your-repo-name`.
-
-## Notes
-
-- Gallery and card images are placeholder photos (picsum.photos) — swap for your own if required.
+- Gallery and card images are placeholder photos (picsum.photos) — swap for your](https://zhhass.github.io/web-2/index.html) own if required.
 - No floats were used anywhere — Task 2 and Task 3 use CSS Grid, Task 0/1/4 use Flexbox, per the assignment rules.
